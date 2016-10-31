@@ -216,6 +216,11 @@
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
         </dependency>
+        <dependency>
+        	<groupId>org.sonarsource.scanner.maven</groupId>
+        	<artifactId>sonar-maven-plugin</artifactId>
+        	<version>3.1.1</version>
+        </dependency>
     </dependencies>
 
     <!-- Maven plugin versions are mentioned in order to guarantee the build reproducibility in the long term -->
@@ -340,6 +345,23 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
+            <!-- Sonar Plugin -->
+            <plugin>
+            	<groupId>org.codehaus.mojo</groupId>
+            	<artifactId>sonar-maven-plugin</artifactId>
+            	<version>3.2</version>
+            	<executions>
+        			<execution>
+            			<id>s1</id>
+            			<phase>verify</phase>
+            			<goals>
+                			<goal>sonar</goal>
+            			</goals>
+            			
+        			</execution>
+        		</executions>		
+        	</plugin>
+            <!-- Sonar Plugin End -->
         </plugins>
     </build>
     <reporting>
@@ -356,7 +378,8 @@
                         </reports>
                     </reportSet>
                 </reportSets>
-            </plugin>
+            </plugin>                    
+            
         </plugins>
     </reporting>
     <profiles>
