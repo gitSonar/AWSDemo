@@ -500,7 +500,7 @@
         <profile>
   			<id>sonar</id>
   			<properties>
-    			<sonar.jdbc.url>jdbc:h2:tcp://localhost:9092/sonar</sonar.jdbc.url>
+    			<sonar.jdbc.url>jdbc:h2:tcp://192.168.1.2:9092/sonar</sonar.jdbc.url>
     			<sonar.jdbc.driverClassName>org.h2.Driver</sonar.jdbc.driverClassName>
     			<sonar.jdbc.username>sonar</sonar.jdbc.username>
     			<sonar.jdbc.password>sonar</sonar.jdbc.password>
