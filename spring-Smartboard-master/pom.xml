@@ -340,21 +340,21 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
-            <plugin>
+            <!-- plugin>
             	<groupId>org.codehaus.mojo</groupId>
             	<artifactId>sonar-maven-plugin</artifactId>
             	<version>3.2</version>
             	<executions>
-        			<!-- execution>
+        			<execution>
             			<id>s1</id>
             			<phase>verify</phase>
             			<goals>
                 			<goal>sonar</goal>
             			</goals>
             			
-        			</execution -->
+        			</execution>
         		</executions>		
-        	</plugin>
+        	</plugin -->
         </plugins>
     </build>
     <reporting>
